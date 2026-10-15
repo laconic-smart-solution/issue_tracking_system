@@ -1,0 +1,47 @@
+{
+  "name": "issue-tracking-backend",
+  "version": "1.0.0",
+  "description": "IT Support Issue Tracking Backend with LINE Bot & Realtime Dashboard",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:init": "tsx src/database/init-db.ts",
+    "db:seed": "tsx src/database/seed.ts"
+  },
+  "keywords": [
+    "helpdesk",
+    "ticketing",
+    "line-bot",
+    "erp-support",
+    "realtime"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@line/bot-sdk": "^9.6.0",
+    "bullmq": "^5.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ioredis": "^5.4.1",
+    "multer": "^1.4.5-lts.1",
+    "oracledb": "^7.0.1",
+    "pg": "^8.13.0",
+    "socket.io": "^4.7.5",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^20.16.10",
+    "@types/oracledb": "^7.0.3",
+    "@types/pg": "^8.11.10",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
